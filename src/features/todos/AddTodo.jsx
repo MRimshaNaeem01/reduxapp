@@ -20,21 +20,28 @@ const AddTodo = ({ onTextChange, onIdChange, editItemId }) => {
     const addTodoHandler = (e) => {
         console.log("form")
         e.preventDefault();
-        dispatch(addTodo(input))
-       setBackground(null)
-        setInput('')
+        if(input.length)
+        {
+            dispatch(addTodo(input))
+            setBackground(null)
+             setInput('')
+        }
+        else{
+            alert("Kindly type todo!")
+        }
+       
 
     }
     const updateTodoHandler = (e) => {
         console.log("update runing")
         e.preventDefault();
-        if (onTextChange) {
+        if (onTextChange.length) {
             dispatch(updateTodo({ id: onIdChange, newText: input }))
             setBackground(null)
-
         }
-        setInput('')
-        setShowUpdate(false)
+       
+         setInput('')
+        setShowUpdate(false);
 
     }
 
@@ -58,12 +65,12 @@ const AddTodo = ({ onTextChange, onIdChange, editItemId }) => {
         <section className='addtodsec'>
             <h1 className='heads1 flex justify-center items-center  text-gray-900'>Add Your Todo</h1>
             <form className='todofrom space-x-3 mt-12 justify-center items-center'>
-                <input className="bg-gray-200 rounded border border-gray-700
+                <input className="bg-gray-200 rounded border border-indigo-200
                  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 
-                 text-base  outline-none text-gray-600 py-1 px-3 leading-8 
+                 text-base   text-gray-600 py-1 px-3 leading-8 
                  transition-colors duration-200 ease-in-out"
                     type="text"
-                    style={{ width: '100%' }}
+                    style={{ width: '100%', background: 'transparent' }}
 
                     id='postTitle'
                     name='todo'
@@ -89,7 +96,9 @@ const AddTodo = ({ onTextChange, onIdChange, editItemId }) => {
                         </svg>
                     </button> :
                         <button type='button'
-                            className="addTodobtn text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                            className="addTodobtn text-white
+                             border py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded 
+                             "
                             onClick={addTodoHandler}>Add Todo</button>
 
                 }

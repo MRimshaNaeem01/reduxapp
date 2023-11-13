@@ -9,8 +9,6 @@ const Todo = ({ onUpdateText, updateId }) => {
   const todos = useSelector((state) => state.todo.todos);
   const [editItemId, setEditItemId] = useState(null);
 
-
-
   const handleUpdate = (id) => {
 
     const editList = todos.find((todo) => {
@@ -20,13 +18,13 @@ const Todo = ({ onUpdateText, updateId }) => {
     setEditItemId(id);
 
     onUpdateText(editList.text, editList.id);
-    console.log("editItemId todo==>", editItemId)
+   // console.log("editItemId todo==>", editItemId)
 
   }
   useEffect(() => {
 
     updateId(editItemId);
-    console.log("====", editItemId)
+   // console.log("====", editItemId)
 
   }, [editItemId]);
 

@@ -2,14 +2,10 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
     todos: [
-        {
-            id: '1',
-            text: "hello"
-        },
-        {
-            id: '2',
-            text: "heffllo"
-        }
+        // {
+        //     id: '1',
+        //     text: "Namaz Time"
+        // }
     ]
 };
 
@@ -32,13 +28,13 @@ export const todoSlice = createSlice({
         },
         updateTodo: (state, action) => {
             const {id, newText} = action.payload
-            console.log(id, "id" , newText, "newText")
+          //  console.log(id, "id" , newText, "newText")
 
             const todoToUpdate  = state.todos.find((todo) => (
                 todo.id === id
             ));
             if(todoToUpdate){
-                console.log(todoToUpdate, "todoToUpdate")
+           //     console.log(todoToUpdate, "todoToUpdate")
                 todoToUpdate.text= newText
             }
            
