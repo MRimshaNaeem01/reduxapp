@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import { Routes, Route } from 'react-router-dom';
+import ToDo from './pages/ToDo';
+import Front from './pages/Front';
+import PasswordValidator from './features/passwordValidator/PasswordValidator';
+import TicTacToe from './features/tictactoe/TicTacToe';
+import ReactTable from './features/table/ReactTable';
+import FormValid from './features/form/FormValid';
+import Quiz from './features/quizApp/Quiz';
+import AnimatedCube from './features/animatedCube/AnimatedCube';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App">
+    // {/* <Couner /> */}
+    // {/* <AddPost />
+    // <PostList /> */}
+    // <AddTodo onTextChange={newText} onIdChange={id} editItemId={itemBorder}/>
+    // <Todo onUpdateText={updateText} updateId={updateId} />
+    // </div>
+
+    <Routes>
+      <Route path="/" element={<Front />} />
+      <Route path="/todo-app" element={<ToDo />} />
+      <Route path="/password-validator" element={<PasswordValidator />} />
+      <Route path="/tic-tac-toe" element={<TicTacToe />} />
+      <Route path="/react-table" element={<ReactTable />} />
+      <Route path="/form-valid" element={<FormValid />} />
+      <Route path="/quiz-app" element={<Quiz />} />
+      <Route path="/animated-cube" element={< AnimatedCube />} />
+
+    </Routes>
+
+
   );
 }
 

@@ -1,0 +1,46 @@
+
+  .mainTodo {
+    max-width: 700px;
+    margin: auto;
+
+  }
+.addtodsec{
+  margin: 20px 0px;
+ }
+
+ .addTodobtn{
+  width: 200px;
+ }
+ .btnss{
+  display: flex;
+ }
+  
+ .heads1 {
+    font-size: 3.5rem;
+    color: aliceblue;
+    margin-bottom: 40px;
+  }
+  
+  .todofrom {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+  }
+  
+  .todofrom {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .postCredit {
+    font-size: 1rem;
+  }
+  
+  .reactionButton {
+    margin: 0 0.25em 0 0;
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+  }

@@ -1,0 +1,84 @@
+.formContainer {
+    width: 100vw;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    height: 0vh;
+    flex-direction: column;  
+      
+}
+
+.formHead {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4c0082df, #9400d34f);
+    color: white;
+    font-size: 30px;
+}
+.reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.formikForm {
+    display: flex;
+    flex-direction: column;
+    margin:  60px auto;
+    padding: 50px;
+    width: 400px;
+    height: 70vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(93, 17, 147, 0.965);;
+
+}
+
+.input-block {
+    color: rgb(83, 80, 80);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  
+}
+
+.input-label {
+    color: rgb(159, 156, 161);
+    font-size: 12px;
+}
+
+.inputForm {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    color: lightgray;
+    font-size: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.inputForm .focus {
+    border: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+.err {
+    color: red;
+    font-size: 12px;
+    font-weight: 200 !important;
+    margin-top: -5px;
+}
+
+.formBtn {
+    width: 100%;
+    color: green;
+    border: 1px solid green;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}

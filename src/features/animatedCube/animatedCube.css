@@ -1,0 +1,87 @@
+.cubeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.anim {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.cube0 {
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgb(128, 128, 245);
+}
+
+.cube {
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgba(143, 23, 129, 0.75);
+}
+
+.cube1 {
+    background-color: rgb(34, 199, 34);
+    border-radius: 10px;
+    padding: 40px;
+
+}
+
+.start {
+    display: flex;
+    background-color: rgba(147, 147, 247, 0.548);
+    width: 100vw;
+    padding: 30px;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+    box-shadow: 10px 10px 38px 0px rgb(128, 128, 245);
+    -webkit-box-shadow: 10px 10px 38px 0px rgb(128, 128, 245);
+    -moz-box-shadow: 10px 10px 38px 0px rgb(128, 128, 245);
+}
+
+.move {
+    display: flex;
+    background-color: rgba(170, 81, 226, 0.358);
+    width: 100vw;
+    padding: 30px;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+    box-shadow: 10px 10px 38px 0px rgba(143, 23, 129, 0.638);
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(143, 23, 129, 0.629);
+    -moz-box-shadow: 10px 10px 38px 0px rgba(143, 23, 129, 0.656);
+}
+
+.transitions {
+    display: flex;
+    background-color: rgba(34, 199, 34, 0.508);
+    width: 100vw;
+    padding: 30px;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+    box-shadow: 10px 10px 38px 0px rgba(34, 199, 34, 0.808);
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(34, 199, 34, 0.73);
+    -moz-box-shadow: 10px 10px 38px 0px rgba(34, 199, 34, 0.68);
+}
+
+span {
+    font-size: 13px;
+    color: rgb(240, 240, 240);
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+    font-weight: 200 !important;
+    margin-top: 10px;
+}
