@@ -63,7 +63,7 @@ const AddTodo = ({ onTextChange, onIdChange, editItemId }) => {
 
     return (
         <section className='addtodsec'>
-            <h1 className='heads1 flex justify-center items-center  text-gray-900'>Add Your Todo</h1>
+            <h2 className='heads1 flex justify-center items-center  text-indigo-900'>Add Your Todo</h2>
             <form className='todofrom space-x-3 mt-12 justify-center items-center'>
                 <input className="bg-gray-200 rounded border border-indigo-200
                  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 
